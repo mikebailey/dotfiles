@@ -1,3 +1,6 @@
+# make usr/ocal appear before /usr so brew works
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/dotfiles/.oh-my-zsh
 
@@ -9,6 +12,17 @@ ZSH_THEME="prose"
 
 export EDITOR="vim"
 bindkey -v 
+
+# virtualenv
+export WORKON_HOME
+source /usr/local/bin/virtualenvwrapper.sh
+
+# ipython notebook
+export ipythonns="ipython notebook --no-browser --pylab inline"
+
+#BigML API Bindings
+export BIGML_USERNAME=myusername
+export BIGML_API_KEY=ae579e7e53fb9abd646a6ff8aa99d4afe83ac291
 
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
@@ -55,4 +69,8 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# Automatically quote globs in URL and remote references
+# __remote_commands=(scp rsync)
+# autoload -U url-quote-magic
+# zle -N self-insert url-quote-magic
+# zstyle -e :urlglobber url-other-schema '[[ $__remote_commands[(i)$words[1]] -le ${#__remote_commands} ]] && reply=("*") || reply=(http https ftp)'

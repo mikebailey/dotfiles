@@ -182,10 +182,15 @@ vnoremap <silent> # :call VisualSelection('b')<CR>
 set hidden
 
 " Easy window navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+"map <C-h> <C-w>h
+"map <C-j> <C-w>j
+"map <C-k> <C-w>k
+"map <C-l> <C-w>l
+
+map <C-J> :bnext<CR>
+map <C-K> :bpref<CR>
+map <C-L> :tabn<CR>
+map <C-H> :tabp<CR>
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>
