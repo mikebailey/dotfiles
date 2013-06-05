@@ -9,3 +9,6 @@ export TERM=xterm-256color
 # virtualenv stuff
 export WORKON_HOME
 source /usr/local/bin/virtualenvwrapper.sh
+
+# ipython
+export ipythonns="ipython notebook --no-browser --pylab inline"
