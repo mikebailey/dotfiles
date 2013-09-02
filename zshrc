@@ -14,7 +14,7 @@ export EDITOR="vim"
 bindkey -v 
 
 # python/virtualenv
-if [ -f /usr/local/bin/virtualenvwrapper.sh ] then
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME
     source /usr/local/bin/virtualenvwrapper.sh
     alias ipythonns='ipython notebook --no-browser --pylab inline'
