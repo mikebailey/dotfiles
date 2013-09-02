@@ -2,10 +2,10 @@
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/dotfiles/.oh-my-zsh
+export ZSH=$HOME/dotfiles/oh-my-zsh
 
 # Set name of the theme to load.
-# Look in ~/dotfiles/.oh-my-zsh/themes/
+# Look in ~/dotfiles/oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
 ZSH_THEME="prose"
@@ -45,7 +45,7 @@ alias ll='ls -alrth'
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/dotfiles/.oh-my-zsh"
+# alias ohmyzsh="mate ~/dotfiles/oh-my-zsh"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
