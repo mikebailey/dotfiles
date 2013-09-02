@@ -36,5 +36,5 @@ Installation
 ``` bash
 git clone git://github.com/mikebailey/dotfiles ~/dotfiles
 cd ~/dotfiles
-./makesymlinks.sh
+bash ./makesymlinks.sh
 ```
