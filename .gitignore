@@ -1,2 +1,6 @@
-.virtualenvs
 .vim/bundle
+oh-my-zsh/
+vim/vim
+vim/.netrwhist
+chef/
+private
