@@ -57,4 +57,13 @@ else
 fi
 }
 
+function update_vim {
+# packages installed/managed with vundle
+if [[ ! -d $dir/vim/bundle/vundle/ ]]; then
+    git clone https://github.com/gmarik/vundle.git $dir/vim/bundle/vundle
+fi
+vim +BundleInstall +qall
+}
+
 install_zsh
+update_vim
