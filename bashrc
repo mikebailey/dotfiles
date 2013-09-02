@@ -6,9 +6,9 @@ export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 export TERM=xterm-256color
 
-# virtualenv stuff
-export WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
-
-# ipython
-export ipythonns="ipython notebook --no-browser --pylab inline"
+# python/virtualenv
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME
+    source /usr/local/bin/virtualenvwrapper.sh
+    export ipythonns="ipython notebook --no-browser --pylab inline"
+fi

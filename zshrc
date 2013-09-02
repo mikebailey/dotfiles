@@ -13,16 +13,12 @@ ZSH_THEME="prose"
 export EDITOR="vim"
 bindkey -v 
 
-# virtualenv
-export WORKON_HOME
-source /usr/local/bin/virtualenvwrapper.sh
-
-# ipython notebook
-alias ipythonns='ipython notebook --no-browser --pylab inline'
-
-#BigML API Bindings
-export BIGML_USERNAME=myusername
-export BIGML_API_KEY=ae579e7e53fb9abd646a6ff8aa99d4afe83ac291
+# python/virtualenv
+if [ -f /usr/local/bin/virtualenvwrapper.sh ] then
+    export WORKON_HOME
+    source /usr/local/bin/virtualenvwrapper.sh
+    alias ipythonns='ipython notebook --no-browser --pylab inline'
+fi
 
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
@@ -40,8 +36,7 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ll='ls -alrth'
 
-
-# Don't know what this does
+# Need to investigate what this is doing and document
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
