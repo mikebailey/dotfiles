@@ -54,6 +54,7 @@ else
         brew install zsh
         exit
     fi
+    cp ./themes/* $dir/oh-my-zsh/themes/
 fi
 }
 
