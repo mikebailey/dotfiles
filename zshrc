@@ -36,6 +36,17 @@ alias mv='mv -i'
 alias cp='cp -i'
 alias ll='ls -alrth'
 
+# Git shortcuts
+function com { git commit -m $1; }
+alias acom='git commit -a --amend'
+function gc { git checkout $1; }
+alias gs='git status'
+alias gb='git branch'
+alias push='git push origin master'
+alias gp='git pull --rebase'
+alias gf='git fetch upstream'
+alias gr='git rebase upstream/master'
+
 # Need to investigate what this is doing and document
 
 # Example aliases
