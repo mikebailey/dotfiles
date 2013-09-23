@@ -188,7 +188,7 @@ set hidden
 "map <C-l> <C-w>l
 
 map <C-J> :bnext<CR>
-map <C-K> :bpref<CR>
+map <C-K> :bprevious<CR>
 map <C-L> :tabn<CR>
 map <C-H> :tabp<CR>
 
