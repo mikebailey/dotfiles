@@ -17,7 +17,6 @@ bindkey -v
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     export WORKON_HOME
     source /usr/local/bin/virtualenvwrapper.sh
-    alias ipythonns='ipython notebook --no-browser --pylab inline'
 fi
 
 # python/anaconda
@@ -49,6 +48,10 @@ alias rm='rm -i'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ll='ls -alrth'
+
+# ipython notebook shortcuts
+alias ipythonns='ipython notebook --no-browser --pylab inline'
+alias ec2ipythonns='ipython notebook --no-browser --ip=`curl -s http://169.254.169.254/latest/meta-data/public-hostname` --pylab inline'
 
 # Git shortcuts
 function com { git commit -a -m $1; }
