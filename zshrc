@@ -20,6 +20,20 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     alias ipythonns='ipython notebook --no-browser --pylab inline'
 fi
 
+# python/anaconda
+if [ -d ~/anaconda ]; then
+    function workonconda { 
+        if [ "" = "$1" ]; 
+        then
+            ls ~/anaconda/envs;
+        else
+            source ~/anaconda/bin/activate $1;
+        fi
+    }
+
+    function deactivateconda { source ~/anaconda/bin/deactivate; }
+fi
+
 # vi style incremental search
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
