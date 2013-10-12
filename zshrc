@@ -31,6 +31,7 @@ if [ -d ~/anaconda ]; then
     }
 
     function deactivateconda { source ~/anaconda/bin/deactivate; }
+    export PATH="$PATH:~/anaconda/bin"
 fi
 
 # vi style incremental search
