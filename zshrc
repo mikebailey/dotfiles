@@ -21,6 +21,8 @@ fi
 
 # python/anaconda
 if [ -d ~/anaconda ]; then
+    PATH="$PATH:~/anaconda/bin"
+    export PATH
     function workonconda { 
         if [ "" = "$1" ]; 
         then
@@ -31,7 +33,6 @@ if [ -d ~/anaconda ]; then
     }
 
     function deactivateconda { source ~/anaconda/bin/deactivate; }
-    export PATH="$PATH:~/anaconda/bin"
 fi
 
 # vi style incremental search
