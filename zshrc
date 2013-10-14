@@ -21,8 +21,7 @@ fi
 
 # python/anaconda
 if [ -d ~/anaconda ]; then
-    PATH="$PATH:~/anaconda/bin"
-    export PATH
+    PATH="$PATH:$HOME/anaconda/bin"
     function workonconda { 
         if [ "" = "$1" ]; 
         then
