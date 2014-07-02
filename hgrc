@@ -1,0 +1,6 @@
+# This is a Mercurial configuration file.
+[ui]
+username = Michael Bailey <mcbailey@fb.com>
+
+[extensions]
+prompt = /etc/mercurial/hg-prompt/prompt.py

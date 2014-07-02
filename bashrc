@@ -15,3 +15,4 @@ if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
     source /usr/local/bin/virtualenvwrapper.sh
     export ipythonns="ipython notebook --no-browser --pylab inline"
 fi
+

@@ -1,6 +1,9 @@
 # make usr/ocal appear before /usr so brew works
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
+# make ruby gems work
+export PATH="$PATH:/usr/local/Cellar/ruby/2.1.1_1/bin:/usr/local/Cellar/ruby/2.1.0/bin"
+
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/dotfiles/oh-my-zsh
 
@@ -64,6 +67,9 @@ alias push='git push origin master'
 alias gp='git pull --rebase'
 alias gf='git fetch upstream'
 alias gr='git rebase upstream/master'
+
+# rake install['theme'] doesn't work without this
+alias rake='noglob rake'
 
 # Need to investigate what this is doing and document
 
